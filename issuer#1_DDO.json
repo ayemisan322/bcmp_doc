@@ -35,8 +35,37 @@
 		{
 			"id": "did:btcr:8wjf-5ygq-qqqq-w7h5-ws#WebofTrust",
 			"type": "WebofTrustService",
-			"trustVCTxids": [
-				""
+			"trustVCs": [
+				{
+					"id":"did:btcr:8wjf-5ygq-qqqq-w7h5-ws#trust-1",
+					"protocolHint": "https://raw.githubusercontent.com/ayemisan322/vc_handler/main/",
+					"vcHint": "https://raw.githubusercontent.com/ayemisan322/vc_handler/main/",
+					"proof": {
+						"type": "BlockchainVCVerification",
+						"BCType": "BTCOpReturn",
+						"chain": "regtest",
+						"TxsChain": {
+							"declareTxid": "fe5954e85b5e72c18fb37ec2f604c980cd35d0400fd277049d9328c9e1df2700",
+							"initialTxid": "1083452367bd5d5160bcb6878f5d99164b99493085f35c741523a96b489829ab",
+							"vcTxid": "f50c5d9c33e1fbfa2d14d3ebc5bc2a53e0d4773637232278fb7aeaa65a7cb4bf"
+						}
+					}
+				},
+				{
+					"id":"did:btcr:8wjf-5ygq-qqqq-w7h5-ws#trust-2",
+					"protocolHint": "https://raw.githubusercontent.com/ayemisan322/vc_handler/main/",
+					"vcHint": "https://raw.githubusercontent.com/ayemisan322/vc_handler/main/",
+					"proof": {
+						"type": "BlockchainVCVerification",
+						"BCType": "BTCOpReturn",
+						"chain": "regtest",
+						"TxsChain": {
+							"declareTxid": "fe5954e85b5e72c18fb37ec2f604c980cd35d0400fd277049d9328c9e1df2700",
+							"initialTxid": "8880b874025a6fc81261b36716f291887cff163b31420ce04af6c15c87ff8b04",
+							"vcTxid": "6a9a1486daf1a02b51867c109563d4250dfcd2ce5850294ebf4e10562f1191af"
+						}
+					}
+				}
 			],
 			"serviceEndpoint": "https://example.com/trustVCs"
 		}
