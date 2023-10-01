@@ -12,7 +12,7 @@
 	"credentialSubject": {
 		"id": "did:btcr:{{data[0]}}",
 		"type": "Person",
-		"description": "This credential indicates that the issuer ({data[4]}}) trusts the user ({{data[0]}})."
+		"description": "This credential indicates that the issuer ({{data[4]}}) trusts the user ({{data[0]}})."
 	},
 	"credentialStatus": {
 		"id": "www.example.com/revocation/{{data[1]}}",
