@@ -1,0 +1,44 @@
+{
+	"@context": [
+		"http://schema.org/",
+		"https://w3id.org/did/v1"
+	],
+	"id": "did:btcr:858h-5yrp-qqqq-f2uc-u3",
+	"verificationMethod": [
+		{
+			"id": "did:btcr:858h-5yrp-qqqq-f2uc-u3#key-1",
+			"type": "EcdsaSecp256k1VerificationKey2019",
+			"controller": "did:btcr:858h-5yrp-qqqq-f2uc-u3",
+			"publicKeyBase58": "031c29ae377489ba136a886b34bdf969d93ed4b293bb7e045d2e4994d5402e3e27"
+		}
+	],
+	"service": [
+		{
+			"id": "did:btcr:858h-5yrp-qqqq-f2uc-u3#Issuer",
+			"type": "IssuerService",
+			"name": "University of Example",
+			"URL": "https://example.com",
+			"email": "test@example.com",
+			"serviceEndpoint": "https://example.com/introductionURL"
+		},
+		{
+			"id": "did:btcr:858h-5yrp-qqqq-f2uc-u3#Revocation",
+			"type": "RevocationService",
+			"revocationList": [
+				{
+					"id": "did:btcr:858h-5yrp-qqqq-f2uc-u3#revoke-1",
+					"txid": ""
+				}
+			],
+			"serviceEndpoint": "https://example.com/revocationURL"
+		},
+		{
+			"id": "did:btcr:858h-5yrp-qqqq-f2uc-u3#WebofTrust",
+			"type": "WebofTrustService",
+			"trustVCTxids": [
+				""
+			],
+			"serviceEndpoint": "https://example.com/trustVCs"
+		}
+	]
+}
