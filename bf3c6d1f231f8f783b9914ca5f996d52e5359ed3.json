@@ -20,9 +20,6 @@
 		"revocationListIndex": "{{data[1]}}",
 		"revocationListCredential": "did:btcr:{{data[0]}}{{data[2]}}"
 	},
-	"default": {
-		"issuanceDate": "blockchain_timestamp"
-	},
 	"proof": {
 		"type": "BlockchainVCVerification",
 		"BCType": "BTCOpReturn",
