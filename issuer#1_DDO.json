@@ -53,8 +53,8 @@
 				},
 				{
 					"id":"did:btcr:8wjf-5ygq-qqqq-w7h5-ws#trust-2",
-					"protocolHint": "https://raw.githubusercontent.com/ayemisan322/vc_handler/main/",
-					"vcHint": "https://raw.githubusercontent.com/ayemisan322/vc_handler/main/",
+					"protocolHint": "https://github.com/ayemisan322/bcmp_doc/blob/main/",
+	"vcHint": "https://raw.githubusercontent.com/ayemisan322/bcmp_doc/main/",
 					"proof": {
 						"type": "BlockchainVCVerification",
 						"BCType": "BTCOpReturn",
