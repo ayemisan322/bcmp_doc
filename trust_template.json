@@ -24,8 +24,8 @@
 		"type": "BlockchainVCVerification",
 		"BCType": "BTCOpReturn",
 		"chain": "",
-		"protocolSpecLink": "{{data[5]}}",
-		"VCTemplateLink": "{{data[6]}}",
-		"TxsChain": {}
+		"protocolSpec": "{{data[5]}}",
+		"vcTemplate": "{{data[6]}}",
+		"txsChain": {}
 	}
 }
