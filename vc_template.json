@@ -55,8 +55,8 @@
 		"merkleRoot": "",
 		"targetHash": "",
 		"path": [],
-		"ProtocolSpecLink": "{{data[7]}}",
-		"VCTemplateLink": "{{data[8]}}",
-		"TxsChain": {}
+		"protocolSpec": "{{data[7]}}",
+		"vcTemplate": "{{data[8]}}",
+		"txsChain": {}
 	}
 }
