@@ -1,0 +1,10 @@
+{
+	"protocolSpec":{
+		"url":"https://github.com/ayemisan322/bcmp_doc/blob/main/protocol_spec.pdf",
+		"hash":"b6d0d540fac176830e55af29dd023adc9a854e0f"
+	},
+	"vcTemplate":{
+		"url":"https://raw.githubusercontent.com/ayemisan322/bcmp_doc/main/vc_template.json",
+		"hash":"b47c363e1d550264011a7cb477b441f1c971c3bb"
+	}
+}
