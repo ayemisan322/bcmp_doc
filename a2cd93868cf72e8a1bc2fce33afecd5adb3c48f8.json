@@ -21,6 +21,6 @@
 		"chain": "",
 		"protocolSpec": "{{data[3]}}",
 		"vcTemplate": "{{data[4]}}",
-		"TxsChain": {}
+		"txsChain": {}
 	}
 }
