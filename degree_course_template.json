@@ -1,0 +1,1188 @@
+{
+	"@context": [
+		"https://www.w3.org/2018/credentials/v1",
+		"https://purl.imsglobal.org/spec/ob/v3p0/context-3.0.2.json",
+		"https://w3id.org/vc-revocation-list-2020/v1"
+	],
+	"id": "http://example.edu/credentials/{{data[3]}}",
+	"type": [
+		"VerifiableCredential",
+		"AchievementCredential"
+	],
+	"name": "University Degree for Example Student",
+	"issuer": {
+		"id": "did:btcr:{{data[44]}}",
+		"type": "Profile",
+		"name": "Example University"
+	},
+	"issuanceDate": "{{data[43]}}",
+	"credentialSubject": {
+		"id": "did:btcr:{{data[0]}}",
+		"type": "AchievementSubject",
+		"creditsEarned": "{{data[5]}}",
+		"identifier": [
+			{
+				"type": "IdentityObject",
+				"hashed": false,
+				"identityHash": "{{data[1]}}",
+				"identityType": "name"
+			},
+			{
+				"type": "IdentityObject",
+				"hashed": false,
+				"identityHash": "{{data[2]}}",
+				"identityType": "emailAddress"
+			}
+		],
+		"achievement": {
+			"id": "https://example.com/achievements/{{data[3]}}",
+			"type": [
+				"Achievement"
+			],
+			"achievementType": "BachelorDegree",
+			"creditsAvailable": "{{data[6]}}",
+			"name": "Bachelor of Science in Computer Science",
+			"description": "This credential represents successful completion of a Bachelor's degree in Computer Science.",
+			"criteria": {
+				"narrative": "The student must have met any additional graduation requirements set by the institution."
+			},
+			"resultDescription": [
+				{
+					"id": "urn:uuid:9df4cabc-4a22-49fb-9d72-ce0b4957fed2",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ001",
+							"targetDescription": "Course 1 description",
+							"targetName": "Course 1",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:ee1afc0d-1fc6-437f-b634-96da73185b50",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ002",
+							"targetDescription": "Course 2 description",
+							"targetName": "Course 2",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:1a9cee38-7686-4e09-b463-bdaa3c70e77e",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ003",
+							"targetDescription": "Course 3 description",
+							"targetName": "Course 3",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:5d252375-0340-409d-948d-72ac156785e6",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ004",
+							"targetDescription": "Course 4 description",
+							"targetName": "Course 4",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:2aaf0d07-5cb9-4e31-985a-9784ecb84388",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ005",
+							"targetDescription": "Course 5 description",
+							"targetName": "Course 5",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:dfdf5db2-17f4-4a20-9e57-9df5ae06a68b",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ006",
+							"targetDescription": "Course 6 description",
+							"targetName": "Course 6",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:9df4cabc-4a22-49fb-9d72-ce0b4957fed2",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ007",
+							"targetDescription": "Course 7 description",
+							"targetName": "Course 7",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:ee1afc0d-1fc6-437f-b634-96da73185b50",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ008",
+							"targetDescription": "Course 8 description",
+							"targetName": "Course 8",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:1a9cee38-7686-4e09-b463-bdaa3c70e77e",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ009",
+							"targetDescription": "Course 9 description",
+							"targetName": "Course 9",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:5d252375-0340-409d-948d-72ac156785e6",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ010",
+							"targetDescription": "Course 10 description",
+							"targetName": "Course 10",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:2aaf0d07-5cb9-4e31-985a-9784ecb84388",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ011",
+							"targetDescription": "Course 11 description",
+							"targetName": "Course 11",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:dfdf5db2-17f4-4a20-9e57-9df5ae06a68b",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ012",
+							"targetDescription": "Course 12 description",
+							"targetName": "Course 12",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:9df4cabc-4a22-49fb-9d72-ce0b4957fed2",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ013",
+							"targetDescription": "Course 13 description",
+							"targetName": "Course 13",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:ee1afc0d-1fc6-437f-b634-96da73185b50",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ014",
+							"targetDescription": "Course 14 description",
+							"targetName": "Course 14",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:1a9cee38-7686-4e09-b463-bdaa3c70e77e",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ015",
+							"targetDescription": "Course 15 description",
+							"targetName": "Course 15",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:5d252375-0340-409d-948d-72ac156785e6",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ016",
+							"targetDescription": "Course 16 description",
+							"targetName": "Course 16",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:2aaf0d07-5cb9-4e31-985a-9784ecb84388",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ017",
+							"targetDescription": "Course 17 description",
+							"targetName": "Course 17",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:dfdf5db2-17f4-4a20-9e57-9df5ae06a68b",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ018",
+							"targetDescription": "Course 18 description",
+							"targetName": "Course 18",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:9df4cabc-4a22-49fb-9d72-ce0b4957fed2",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ019",
+							"targetDescription": "Course 19 description",
+							"targetName": "Course 19",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:ee1afc0d-1fc6-437f-b634-96da73185b50",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ020",
+							"targetDescription": "Course 20 description",
+							"targetName": "Course 20",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:1a9cee38-7686-4e09-b463-bdaa3c70e77e",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ021",
+							"targetDescription": "Course 21 description",
+							"targetName": "Course 21",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:5d252375-0340-409d-948d-72ac156785e6",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ022",
+							"targetDescription": "Course 22 description",
+							"targetName": "Course 22",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:2aaf0d07-5cb9-4e31-985a-9784ecb84388",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ023",
+							"targetDescription": "Course 23 description",
+							"targetName": "Course 23",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:dfdf5db2-17f4-4a20-9e57-9df5ae06a68b",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ024",
+							"targetDescription": "Course 24 description",
+							"targetName": "Course 24",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:9df4cabc-4a22-49fb-9d72-ce0b4957fed2",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ025",
+							"targetDescription": "Course 25 description",
+							"targetName": "Course 25",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:ee1afc0d-1fc6-437f-b634-96da73185b50",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ026",
+							"targetDescription": "Course 26 description",
+							"targetName": "Course 26",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:1a9cee38-7686-4e09-b463-bdaa3c70e77e",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ027",
+							"targetDescription": "Course 27 description",
+							"targetName": "Course 27",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:5d252375-0340-409d-948d-72ac156785e6",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ028",
+							"targetDescription": "Course 28 description",
+							"targetName": "Course 28",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:2aaf0d07-5cb9-4e31-985a-9784ecb84388",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ029",
+							"targetDescription": "Course 29 description",
+							"targetName": "Course 29",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:dfdf5db2-17f4-4a20-9e57-9df5ae06a68b",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ030",
+							"targetDescription": "Course 30 description",
+							"targetName": "Course 30",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:9df4cabc-4a22-49fb-9d72-ce0b4957fed2",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ031",
+							"targetDescription": "Course 31 description",
+							"targetName": "Course 31",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:ee1afc0d-1fc6-437f-b634-96da73185b50",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ032",
+							"targetDescription": "Course 32 description",
+							"targetName": "Course 32",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:1a9cee38-7686-4e09-b463-bdaa3c70e77e",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ033",
+							"targetDescription": "Course 33 description",
+							"targetName": "Course 33",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:5d252375-0340-409d-948d-72ac156785e6",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ034",
+							"targetDescription": "Course 34 description",
+							"targetName": "Course 34",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:2aaf0d07-5cb9-4e31-985a-9784ecb84388",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ035",
+							"targetDescription": "Course 35 description",
+							"targetName": "Course 35",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				},
+				{
+					"id": "urn:uuid:dfdf5db2-17f4-4a20-9e57-9df5ae06a68b",
+					"type": "ResultDescription",
+					"alignment": [
+						{
+							"type": "Alignment",
+							"targetCode": "XYZ036",
+							"targetDescription": "Course 36 description",
+							"targetName": "Course 36",
+							"targetFramework": "University Program and Course Catalog",
+							"targetType": "CFItem",
+							"targetUrl": "https://example.edu/catalog/degree/course"
+						}
+					],
+					"allowedValue": [
+						"A",
+						"B",
+						"C",
+						"D"
+					],
+					"name": "Final Project Grade",
+					"requiredValue": "C",
+					"resultType": "LetterGrade"
+				}
+			]
+		},
+		"result": [
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:9df4cabc-4a22-49fb-9d72-ce0b4957fed2",
+				"value": "{{data[7]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:ee1afc0d-1fc6-437f-b634-96da73185b50",
+				"value": "{{data[8]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:1a9cee38-7686-4e09-b463-bdaa3c70e77e",
+				"value": "{{data[9]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:5d252375-0340-409d-948d-72ac156785e6",
+				"value": "{{data[10]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:2aaf0d07-5cb9-4e31-985a-9784ecb84388",
+				"value": "{{data[11]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:dfdf5db2-17f4-4a20-9e57-9df5ae06a68b",
+				"value": "{{data[12]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:9df4cabc-4a22-49fb-9d72-ce0b4957fed2",
+				"value": "{{data[13]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:ee1afc0d-1fc6-437f-b634-96da73185b50",
+				"value": "{{data[14]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:1a9cee38-7686-4e09-b463-bdaa3c70e77e",
+				"value": "{{data[15]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:5d252375-0340-409d-948d-72ac156785e6",
+				"value": "{{data[16]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:2aaf0d07-5cb9-4e31-985a-9784ecb84388",
+				"value": "{{data[17]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:dfdf5db2-17f4-4a20-9e57-9df5ae06a68b",
+				"value": "{{data[18]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:9df4cabc-4a22-49fb-9d72-ce0b4957fed2",
+				"value": "{{data[19]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:ee1afc0d-1fc6-437f-b634-96da73185b50",
+				"value": "{{data[20]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:1a9cee38-7686-4e09-b463-bdaa3c70e77e",
+				"value": "{{data[21]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:5d252375-0340-409d-948d-72ac156785e6",
+				"value": "{{data[22]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:2aaf0d07-5cb9-4e31-985a-9784ecb84388",
+				"value": "{{data[23]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:dfdf5db2-17f4-4a20-9e57-9df5ae06a68b",
+				"value": "{{data[24]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:9df4cabc-4a22-49fb-9d72-ce0b4957fed2",
+				"value": "{{data[25]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:ee1afc0d-1fc6-437f-b634-96da73185b50",
+				"value": "{{data[26]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:1a9cee38-7686-4e09-b463-bdaa3c70e77e",
+				"value": "{{data[27]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:5d252375-0340-409d-948d-72ac156785e6",
+				"value": "{{data[28]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:2aaf0d07-5cb9-4e31-985a-9784ecb84388",
+				"value": "{{data[29]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:dfdf5db2-17f4-4a20-9e57-9df5ae06a68b",
+				"value": "{{data[30]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:9df4cabc-4a22-49fb-9d72-ce0b4957fed2",
+				"value": "{{data[31]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:ee1afc0d-1fc6-437f-b634-96da73185b50",
+				"value": "{{data[32]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:1a9cee38-7686-4e09-b463-bdaa3c70e77e",
+				"value": "{{data[33]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:5d252375-0340-409d-948d-72ac156785e6",
+				"value": "{{data[34]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:2aaf0d07-5cb9-4e31-985a-9784ecb84388",
+				"value": "{{data[35]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:dfdf5db2-17f4-4a20-9e57-9df5ae06a68b",
+				"value": "{{data[36]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:9df4cabc-4a22-49fb-9d72-ce0b4957fed2",
+				"value": "{{data[37]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:ee1afc0d-1fc6-437f-b634-96da73185b50",
+				"value": "{{data[38]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:1a9cee38-7686-4e09-b463-bdaa3c70e77e",
+				"value": "{{data[39]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:5d252375-0340-409d-948d-72ac156785e6",
+				"value": "{{data[40]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:2aaf0d07-5cb9-4e31-985a-9784ecb84388",
+				"value": "{{data[41]}}"
+			},
+			{
+				"type": [
+					"Result"
+				],
+				"resultDescription": "urn:uuid:dfdf5db2-17f4-4a20-9e57-9df5ae06a68b",
+				"value": "{{data[42]}}"
+			}
+		]
+	},
+	"credentialStatus": {
+		"id": "https://example.com/status/revoke-1#list",
+		"type": "RevocationList2020Status",
+		"revocationListIndex": "{{data[3]}}",
+		"revocationListCredential": "did:btcr:{{data[0]}}{{data[4]}}"
+	},
+	"proof": {
+		"type": "BlockchainVCVerification",
+		"BCType": "BTCOpReturn",
+		"chain": "",
+		"merkleRoot": "",
+		"targetHash": "",
+		"path": [],
+		"protocolSpec": "{{data[45]}}",
+		"vcTemplate": "{{data[46]}}",
+		"txsChain": {}
+	}
+}
