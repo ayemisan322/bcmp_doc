@@ -1,0 +1,68 @@
+{
+	"@context": [
+		"https://www.w3.org/2018/credentials/v1",
+		"https://purl.imsglobal.org/spec/ob/v3p0/context-3.0.2.json",
+		"https://w3id.org/vc-revocation-list-2020/v1"
+	],
+	"id": "http://example.edu/credentials/{{data[3]}}",
+	"type": [
+		"VerifiableCredential",
+		"AchievementCredential"
+	],
+	"name": "University Degree for Example Student",
+	"issuer": {
+		"id": "did:btcr:{{data[8]}}",
+		"type": "Profile",
+		"name": "Example University"
+	},
+	"issuanceDate": "{{data[7]}}",
+	"credentialSubject": {
+		"id": "did:btcr:{{data[0]}}",
+		"type": "AchievementSubject",
+		"creditsEarned": "{{data[5]}}",
+		"identifier": [
+			{
+				"type": "IdentityObject",
+				"hashed": false,
+				"identityHash": "{{data[1]}}",
+				"identityType": "name"
+			},
+			{
+				"type": "IdentityObject",
+				"hashed": false,
+				"identityHash": "{{data[2]}}",
+				"identityType": "emailAddress"
+			}
+		],
+		"achievement": {
+			"id": "https://example.com/achievements/{{data[3]}}",
+			"type": [
+				"Achievement"
+			],
+			"achievementType": "BachelorDegree",
+			"creditsAvailable": "{{data[6]}}",
+			"name": "Bachelor of Science in Computer Science",
+			"description": "This credential represents successful completion of a Bachelor's degree in Computer Science.",
+			"criteria": {
+				"narrative": "The student must have met any additional graduation requirements set by the institution."
+			}
+		}
+	},
+	"credentialStatus": {
+		"id": "https://example.com/status/revoke-1#list",
+		"type": "RevocationList2020Status",
+		"revocationListIndex": "{{data[3]}}",
+		"revocationListCredential": "did:btcr:{{data[0]}}{{data[4]}}"
+	},
+	"proof": {
+		"type": "BlockchainVCVerification",
+		"BCType": "BTCOpReturn",
+		"chain": "",
+		"merkleRoot": "",
+		"targetHash": "",
+		"path": [],
+		"protocolSpec": "{{data[9]}}",
+		"vcTemplate": "{{data[10]}}",
+		"txsChain": {}
+	}
+}
