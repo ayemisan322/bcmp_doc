@@ -25,7 +25,7 @@
 			"hasCourse": "https://schema.org/hasCourse"
 		}
 	],
-	"id": {},
+	"id": "https://example.org/credential/",
 	"type": [
 		"VerifiableCredential",
 		"AchievementCredential"
@@ -48,7 +48,7 @@
 			"dateOfBirth": {}
 		},
 		"achievement": {
-			"id": {},
+			"id": "https://example.org/credential/achievement",
 			"type": "Achievement",
 			"achievementType": "BachelorDegree",
 			"dateofAdmission": {},
