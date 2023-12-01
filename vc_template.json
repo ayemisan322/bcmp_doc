@@ -1,0 +1,81 @@
+{
+	"@context": [
+		"https://www.w3.org/2018/credentials/v1",
+		"https://purl.imsglobal.org/spec/ob/v3p0/context-3.0.2.json",
+		"https://w3id.org/vc-revocation-list-2020/v1",
+		{
+			"recipient": "https://www.example.ac.th/transcript#recipient",
+			"Course": "https://schema.org/Course",
+			"courseCode": "https://schema.org/courseCode",
+			"courseName": "https://schema.org/name",
+			"credit": "https://schema.org/numberOfCredits",
+			"grade": "https://schema.org/assesses",
+			"semester": "https://www.example.ac.th/transcript#semester",
+			"GPS": "https://www.example.ac.th/transcript#GPS",
+			"number": "https://schema.org/Number",
+			"GPA": "https://www.example.ac.th/transcript#GPA",
+			"creditHours": "https://www.example.ac.th/transcript#creditHours",
+			"dateofAdmission": "https://www.example.ac.th/transcript#dateofAdmission",
+			"dateofGraduation": "https://www.example.ac.th/transcript#dateofGraduation",
+			"faculty": "https://www.example.ac.th/transcript#faculty",
+			"department": "https://www.example.ac.th/transcript#department",
+			"major": "https://www.example.ac.th/transcript#major",
+			"enrollmentRecord": "https://www.example.ac.th/transcript/transcriptRecord",
+			"enrollment": "https://www.example.ac.th/transcript",
+			"hasCourse": "https://schema.org/hasCourse"
+		}
+	],
+	"id": {},
+	"type": [
+		"VerifiableCredential",
+		"AchievementCredential"
+	],
+	"name": "University Degree for Example Student",
+	"issuer": {
+		"id": {},
+		"type": "Profile",
+		"name": "Example University"
+	},
+	"issuanceDate": "2023-10-05T04:26:04Z",
+	"credentialSubject": {
+		"id": {},
+		"type": "AchievementSubject",
+		"recipient": {
+			"id": {},
+			"type": "Profile",
+			"name": {},
+			"email": {},
+			"dateOfBirth": {}
+		},
+		"achievement": {
+			"id": {},
+			"type": "Achievement",
+			"achievementType": "BachelorDegree",
+			"dateofAdmission": {},
+			"dateofGraduation": {},
+			"creditHours": {},
+			"GPA": {},
+			"name": "Bachelor of Science in Computer Science",
+			"description": "This credential represents successful completion of a Bachelor's degree in Computer Science.",
+			"criteria": {
+				"narrative": "The student must have met any additional graduation requirements set by the institution."
+			}
+		},
+		"enrollment": [
+			{
+				"semester": {},
+				"GPS": {},
+				"GPA": {},
+				"hasCourse": [
+					{
+						"type": "Course",
+						"courseCode": {},
+						"courseName": {},
+						"grade": {},
+						"credit": {}
+					}
+				]
+			}
+		]
+	}
+}
