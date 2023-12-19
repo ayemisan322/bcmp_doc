@@ -77,5 +77,11 @@
 				]
 			}
 		]
+	},
+	"credentialStatus": {
+		"id": "https://example.com/status/revoke-1#list",
+		"type": "RevocationList2020Status",
+		"revocationListIndex": {},
+		"revocationListCredential": {}
 	}
 }
